@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignBridge: Sign Language Translator</title>
+    <!-- Basic Dark Mode Styling for a clean, modern look -->
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #121212; color: #ffffff; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; margin: 0; }
+        .container { text-align: center; }
+        h1 { margin-bottom: 5px; color: #4CAF50; }
+        p { color: #aaaaaa; margin-top: 0; }
+        .video-feed { width: 640px; height: 480px; background-color: #1e1e1e; border-radius: 12px; border: 2px solid #333; margin-top: 20px; margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.3); display: flex; align-items: center; justify-content: center; }
+        .translation-box { padding: 20px 40px; background-color: #242424; border-radius: 8px; font-size: 28px; font-weight: bold; border-left: 5px solid #4CAF50; box-shadow: 0 4px 6px rgba(0,0,0,0.2); }
+        .prediction-text { color: #4CAF50; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>SignBridge 🤟</h1>
+        <p>Real-Time Sign Language Translation System</p>
+        
+        <!-- Video Feed Placeholder: Later we will replacing this with an <img> tag connected to a Flask video stream -->
+        <div class="video-feed">
+            <p style="color: #666; font-size: 18px;">Camera Feed Offline<br><span style="font-size: 14px;">(Awaiting ML Model Integration)</span></p>
+        </div>
+
+        <div class="translation-box">
+            Predicted Sign: <span class="prediction-text" id="prediction">Waiting...</span>
+        </div>
+    </div>
+</body>
+</html>

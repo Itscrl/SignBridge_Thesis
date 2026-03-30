@@ -9,3 +9,7 @@
 SignBridge_Thesis.env/
 __pycache__/
 dataset/
+
+# SignBridge Specific Ignored Folders
+saved_models/
+.ipynb_checkpoints/
