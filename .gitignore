@@ -1,0 +1,11 @@
+# Ignore compiled LaTeX files
+*.aux
+*.log
+*.out
+*.pdf
+
+# Ignore Python virtual environments or datasets (if applicable)
+.venv/
+SignBridge_Thesis.env/
+__pycache__/
+dataset/
